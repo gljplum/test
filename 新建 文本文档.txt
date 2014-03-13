@@ -1,0 +1,64 @@
+D:\我的文档\GitHub\aaa>git clone https://github.com/gljplum/test.git
+Cloning into 'test'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done
+
+D:\我的文档\GitHub\aaa>cd ..
+
+D:\我的文档\GitHub>cd test
+
+D:\我的文档\GitHub\test>git clone https://github.com/gljplum/test.git
+Cloning into 'test'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done
+
+D:\我的文档\GitHub\test>git show
+fatal: Not a git repository (or any of the parent directories): .git
+
+D:\我的文档\GitHub\test>cd test
+
+D:\我的文档\GitHub\test\test>git show
+fatal: bad default revision 'HEAD'
+
+D:\我的文档\GitHub\test\test>git diff
+
+D:\我的文档\GitHub\test\test>git add "新建 文本文档.txt"
+
+D:\我的文档\GitHub\test\test>git commit
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrator@MS-201307161958.(
+none)')
+
+D:\我的文档\GitHub\test\test>git config --global user.email "you@example.com"
+
+D:\我的文档\GitHub\test\test> git config --global user.name "Your Name"
+
+D:\我的文档\GitHub\test\test>git commit
+Aborting commit due to empty commit message.
+
+D:\我的文档\GitHub\test\test>git commit -m 'ok'
+[master (root-commit) 9e88f3d] 'ok'
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "\346\226\260\345\273\272 \346\226\207\346\234\254\346\226\2
+07\346\241\243.txt"
+
+D:\我的文档\GitHub\test\test>git push
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 220 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/gljplum/test.git
+ * [new branch]      master -> master
+
+D:\我的文档\GitHub\test\test>
